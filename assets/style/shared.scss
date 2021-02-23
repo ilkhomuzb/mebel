@@ -1,0 +1,43 @@
+:focus {
+  outline: -webkit-focus-ring-color auto 0 !important;
+}
+@mixin offText {
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (наподобие Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari и Opera */
+  -webkit-touch-callout: none; /* Отключить вызовы в Android и iOS */
+}
+.a-container{
+  max-width: 1380px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.link{
+  @include offText();
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.main__tooltip{
+  background-color: white !important;
+  .navigate__link{
+  a{
+    color: black;
+  }}
+}
+.navigate__link{
+  height: 40px;
+  a{
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+  }
+
+}
